@@ -1,11 +1,13 @@
 #include <stdio.h>
-
-int main ()
+#include <stdlib.h>
+#include <locale.h>
+int main(void)
 {
-    char a;
-    printf("Digite o caracterer: ");
-    scanf("%c", &a);
-    getchar();
-    printf("%c",a);
+    setlocale(LC_ALL, "Portuguese");
+    char c;
+    printf("digite o caractere: ");
+    scanf("%c",&c);
+    fgetchar();
+    printf("%c",c);
     return 0;
 }
