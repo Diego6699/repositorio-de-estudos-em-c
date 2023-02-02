@@ -5,7 +5,10 @@ int main(void)
 {
     setlocale(LC_ALL, "Portuguese");
 
-    for (int i = 0; i< 10;i++){
-        printf("numero\t%d\n",i);
+    char nome[20] = "diego leonardo";
+    int i = 0;
+    while(i < 20){
+        printf("%d\t%c\n",i,nome[i]);
+        i++;
     }
 }
