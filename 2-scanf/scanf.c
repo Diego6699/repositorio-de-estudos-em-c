@@ -1,12 +1,15 @@
 #include <stdio.h>
 #include <string.h>
-#include <locale.h>
-int main(void)
-{
-    setlocale(LC_ALL, "Portuguese");
 
-    char nome [3][3] = {{2,4,6},{1,3,5}};
-    int a = strlen(nome);
-    printf("%d",a);
+int main() {
+  char str1[20] = "Hello ";
+  char str2[] = "World!";
 
+  // Concatenate str2 to str1 (the result is stored in str1)
+  strcat(str1, str2);
+
+  // Print str1
+  printf("%s %d", str1,strlen(str1));
+
+  return 0;
 }
