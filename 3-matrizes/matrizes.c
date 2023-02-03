@@ -5,10 +5,10 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    char nome [100] = "";
-    char nomeCompleto [100] = "";
+    char saudacao [20] = "Ola, ";
+    char saudacao2 [100] = "mundo!";
     //copiar string
-    strcpy(nomeCompleto,"Diego Leonardo");
-    printf("nome: %s /ntamanho: %d",nomeCompleto,strlen(nomeCompleto));
+    strcat(saudacao,saudacao2),
+    printf("%s",saudacao);
     return 0;
 }
