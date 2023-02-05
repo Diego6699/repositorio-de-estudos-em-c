@@ -3,17 +3,39 @@
 
 int main(int argc, char const *argv[])
 {
+    // varivel unica
+    struct
+    {
+        char nome[50];
+        int idade;
+    } pessoa;
+    // sem typedef
     struct aluno
     {
         long id;
         char nome[50];
         int idade;
     };
-    struct aluno al;
-    al.id = 1234;
-    strcpy(al.nome,"Diego");
-    al.idade = 21;
-    
-    printf("id: %ld\tnome: %s\tidade: %d\t",al.id,al.nome,al.idade);
+    typedef struct
+    {
+        long id;
+        char nome[50];
+        int idade;
+    } professor;
+
+    // usando struturas diferentes;
+    strcpy(pessoa.nome, "diego");
+    pessoa.idade = 21;
+
+    struct aluno diego;
+    diego.id = 12345l;
+    strcpy(diego.nome, "diego");
+    diego.idade = 21;
+
+    professor paulo;
+    paulo.id = 4321;
+    strcpy(paulo.nome, "diego");
+    paulo.idade = 45;
+
     return 0;
 }
