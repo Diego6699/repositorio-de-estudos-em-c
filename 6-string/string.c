@@ -3,7 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int a = strcmp("dieg", "diego");
+    int a = strcmp("diego", "diego");
     if (a == 0)
     {
         printf("sao iguais: %d",a);
