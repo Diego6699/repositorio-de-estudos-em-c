@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <string.h>
+#include<string.h>
 
-int main(int argc, char const *argv[])
+int main()
 {
     typedef struct
     {
@@ -11,12 +11,11 @@ int main(int argc, char const *argv[])
     } pessoa;
 
     pessoa p1;
-    strcpy(p1.nome, "diego");
+    strcpy(p1.nome,"diego");
     p1.cpf = 123;
     p1.idade = 21;
 
-    pessoa p2 = {123, "diego", 21};
+    pessoa p2 = {123,"diego", 21};
     pessoa p3 = p2;
-
     return 0;
 }
