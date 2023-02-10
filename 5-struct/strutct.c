@@ -10,13 +10,7 @@ int main(int argc, char const *argv[])
         int idade;
     } pessoa;
 
-    pessoa p1;
-    strcpy(p1.nome, "diego");
-    p1.cpf = 123;
-    p1.idade = 21;
-
-    pessoa p2 = {123, "diego", 21};
-    pessoa p3 = p2;
+    pessoa p[5];
 
     return 0;
 }
